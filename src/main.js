@@ -3,12 +3,18 @@
 import Vue from 'vue'
 import App from './App'
 // element-ui
-import Element from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
+
+import '@/styles/index.scss' // global css
 
 import router from './router'
 
 Vue.config.productionTip = false
+
+Vue.use(ElementUI);
+
 
 /* eslint-disable no-new */
 new Vue({

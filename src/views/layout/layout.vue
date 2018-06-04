@@ -1,14 +1,19 @@
 <template>
   <section class="app-main" style="min-height: 100%">
+      
       layout
-     <router-view :key="key"></router-view>
+    <sidebar></sidebar>
+    <router-view></router-view>
   </section>
 </template>
 
 <script>
+import { Sidebar } from './components'
+
 export default {
   name: 'AppMain',
-  computed: {
+  components: {
+    Sidebar
   }
 }
 </script>
